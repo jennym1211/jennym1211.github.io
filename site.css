@@ -4,14 +4,17 @@ html {
   font-family: "Lucida Console", "Lucida Console", monospace;
 }
 
-body {
-  background-image: linear-gradient(#baa88d, #faf6f2);
-  margin: 0;
-}
 div {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
+}
+
+body {
+  background-image: linear-gradient(#baa88d, #faf6f2);
+  margin: 0;
+  overflow: auto;
 }
 
 footer {
@@ -20,31 +23,58 @@ footer {
   position: absolute;
   height: 60px;
   bottom: 0;
+  position: fixed;
 }
 
 #intro {
-  max-width: 600px;
   background-color: #d49e8d;
   padding: 20px;
-
+  margin-left: 10px;
+  margin-right: 5%;
   box-shadow: 10px -10px #b08401;
   border-radius: 25px;
+  width: auto;
+  overflow: hidden;
 }
 
 img {
   height: auto;
   float: left;
   margin-left: 5%;
+  margin-right: 5%;
   box-shadow: 15px -10px #b08401;
   border-radius: 25px;
   max-width: 100%;
+  overflow: auto;
+}
+
+#footerNav {
+  position: fixed;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  #intro {
+    margin-top: 10%;
+    float: right;
+    margin-bottom: 10%;
+  }
+  img {
+    float: left;
+  }
 }
 
 @media screen and (max-width: 800px) {
   #intro {
     margin-top: 10%;
     float: right;
+    margin-bottom: 10%;
   }
+}
+
+#headerNav {
+  position: relative;
+  margin-top: 0;
 }
 
 h1 {
@@ -55,6 +85,9 @@ h1 {
 p {
   line-height: 1.6;
   margin: auto;
+  background-color: #d49e8d;
+  border-radius: 25px;
+  box-shadow: 10px -10px #b08401;
 }
 
 nav {
