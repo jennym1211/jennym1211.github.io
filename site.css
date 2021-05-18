@@ -45,13 +45,17 @@ p {
   border-radius: 25px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav {
   overflow: hidden;
   background-color: #683b2b;
   height: 60px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 li {
@@ -69,4 +73,10 @@ li a {
 
 li a:hover {
   background-color: #d49e8d;
+}
+
+#copyright {
+  float: right;
+  color: white;
+  left: 5px;
 }
