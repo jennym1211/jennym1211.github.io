@@ -22,12 +22,29 @@ footer {
   bottom: 0;
 }
 
+#intro {
+  max-width: 600px;
+  background-color: #d49e8d;
+  padding: 20px;
+
+  box-shadow: 10px -10px #b08401;
+  border-radius: 25px;
+}
+
 img {
   height: auto;
   float: left;
   margin-left: 5%;
   box-shadow: 15px -10px #b08401;
   border-radius: 25px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #intro {
+    margin-top: 10%;
+    float: right;
+  }
 }
 
 h1 {
@@ -38,11 +55,6 @@ h1 {
 p {
   line-height: 1.6;
   margin: auto;
-  max-width: 600px;
-  background-color: #d49e8d;
-  padding: 20px;
-  box-shadow: 10px -10px #b08401;
-  border-radius: 25px;
 }
 
 nav {
