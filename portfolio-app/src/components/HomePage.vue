@@ -6,6 +6,8 @@ import vue from "../assets/vue.svg";
 import node from "../assets/nodejs.svg";
 import c from "../assets/c.svg";
 import ts from "../assets/ts.png";
+import AboutMe from "./AboutMe.vue";
+import ProjectsIndex from "./ProjectsIndex.vue";
 
 const tools = [
   { tool: "C# / ASP.Net Core", img: c },
@@ -19,29 +21,31 @@ const tools = [
 </script>
 
 <template>
-  <h1 class="mb-10">Hello! My name is Jennifer Mackey.</h1>
-  <div class="bg-teal-500 p-10 rounded-lg">
-    <div class="flex flex-row">
-      <img class="animated rollIn" id="me" :src="me" />
+  <div class="mt-10">
+    <h1 class="mb-10">Hi! My name is Jennifer Mackey.</h1>
+    <div class="bg-[#8B5B6E] p-10 rounded-lg">
+      <div class="flex flex-row">
+        <img class="animated rollIn" id="me" :src="me" />
 
-      <div class="w-[300px] h-fit p-4 mt-20 ml-20">
-        I am a software engineer with a strong design background, with
-        experience in full stack development for web applications. I am a quick
-        learner of various coding stacks and eager to develop and deliver robust
-        solutions and software.
+        <div class="w-[500px] h-fit p-4 text-right ml-20 text-white">
+          I am a software engineer with a strong design background, with
+          experience in full stack development for web applications.
+          <br />
+          <br />
+
+          I started off wanting to pursue illustration, ever being creative and
+          making imagination become a reality. With a combinimation of a love
+          for technology, this mindset turned into me pursuing software
+          development.
+
+          <br />
+          <br />
+          I am a quick learner of various coding stacks and eager to develop and
+          deliver robust solutions and software.
+        </div>
       </div>
     </div>
-
-    <div class="mb-10">
-      <router-link to="/about" class="text-teal-300 underline"
-        >Click to learn more about me!</router-link
-      >
-    </div>
   </div>
-  <h2>
-    Note: Pardon the mess, this is currently getting reworked with love with
-    Vue! ❤️
-  </h2>
 </template>
 
 <style scoped>
@@ -51,7 +55,7 @@ const tools = [
   margin-bottom: 2em;
   border-radius: 50%;
 
-  box-shadow: 15px -10px #66fcf1;
+  box-shadow: 15px -10px #95a7b6;
 
   max-width: 100%;
   overflow: auto;
