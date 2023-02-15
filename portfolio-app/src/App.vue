@@ -50,7 +50,7 @@ const scrollToElement = (id: any) => {
       </div>
     </div>
 
-    <div class="h-[100vh] scroll-mt-12" id="home">
+    <div class="h-screen ml-5 scroll-mt-12" id="home">
       <HomePage />
 
       <h2 class="text-lg mt-4">

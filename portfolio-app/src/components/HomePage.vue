@@ -25,9 +25,12 @@ const tools = [
     <h1 class="mb-10">Hi! My name is Jennifer Mackey.</h1>
     <div class="bg-[#8B5B6E] p-10 rounded-lg">
       <div class="flex flex-row">
-        <img class="animated rollIn" id="me" :src="me" />
+        <img
+          class="animated rollIn rounded-[50%] overflow-auto mb-[2em] h-full max-h-96 round-shadow"
+          :src="me"
+        />
 
-        <div class="w-[500px] h-fit p-4 text-right ml-20 text-white">
+        <div class="h-fit p-4 ml-5 my-2 text-right text-white">
           I am a software engineer with a strong design background, with
           experience in full stack development for web applications.
           <br />
@@ -49,17 +52,8 @@ const tools = [
 </template>
 
 <style scoped>
-#me {
-  height: auto;
-
-  margin-bottom: 2em;
-  border-radius: 50%;
-
+.round-shadow {
   box-shadow: 15px -10px #95a7b6;
-
-  max-width: 100%;
-  overflow: auto;
-  max-width: 300px;
 }
 
 .animated {
