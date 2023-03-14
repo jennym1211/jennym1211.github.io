@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/vue3-flicking": "^4.10.6",
     "vue": "^3.2.45",
     "vue-router": "^4.0.13"
   },
